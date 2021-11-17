@@ -12,10 +12,12 @@
       </li>
     </ul>
     <component :is="currentTab"></component>
+    <ComponentLoader :tab="currentTab"></ComponentLoader>
   </div>
 </template>
 
 <script>
+import ComponentLoader from '@/components/ComponentLoader';
 export default {
   name: 'HelloWorld',
   props: {
@@ -24,19 +26,25 @@ export default {
   data() {
     return {
       tabs: [
-        'vue-router',
-        'vuex',
-        'vue-devtools',
-        'vue-loader',
-        'awesome-vue',
+        'VueRouter',
+        'Vuex',
+        'VueDevtools',
+        'VueLoader',
+        'AwesomeVue',
       ],
-      currentTab: 'vue-router'
+      currentTab: 'VueRouter'
+    }
+  },
+  computed: {
+    componentLoader() {
+      return () => import('@/components/VueRouter')
     }
   },
   components: {
-    'vue-router': () => import('@/components/vue-router'),
-    vuex: () => import('@/components/vuex'),
-    'vue-devtools': () => import('@/components/vue-devtools'),
+    ComponentLoader,
+    VueRouter: () => import('@/components/VueRouter'),
+    Vuex: () => import('@/components/Vuex'),
+    VueDevtools: () => import('@/components/VueDevtools'),
   }
 }
 </script>

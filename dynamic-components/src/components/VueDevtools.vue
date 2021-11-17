@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'vue-devtools'
+  name: 'VueDevtools'
 };
 </script>
 

@@ -1,12 +1,12 @@
 <template>
   <h1>
-    VUE-ROUTER
+    VUEX
   </h1>
 </template>
 
 <script>
 export default {
-  name: 'vue-router'
+  name: 'Vuex'
 };
 </script>
 
