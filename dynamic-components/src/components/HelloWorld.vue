@@ -11,13 +11,14 @@
         {{ tab }}
       </li>
     </ul>
+    <h4>components 활용</h4>
     <component :is="currentTab"></component>
-    <ComponentLoader :tab="currentTab"></ComponentLoader>
+    <h4>computed  활용</h4>
+    <component :is="componentLoader"></component>
   </div>
 </template>
 
 <script>
-import ComponentLoader from '@/components/ComponentLoader';
 export default {
   name: 'HelloWorld',
   props: {
@@ -37,11 +38,13 @@ export default {
   },
   computed: {
     componentLoader() {
-      return () => import('@/components/VueRouter')
+      const tab = this.currentTab
+      // console.log(this.currentTab)
+      return () => import(`@/components/${tab}`)
+      // return () => import(`@/components/${this.currentTab}`)
     }
   },
   components: {
-    ComponentLoader,
     VueRouter: () => import('@/components/VueRouter'),
     Vuex: () => import('@/components/Vuex'),
     VueDevtools: () => import('@/components/VueDevtools'),
