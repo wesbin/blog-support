@@ -11,7 +11,7 @@
         {{ tab }}
       </li>
     </ul>
-    <h4>components 활용</h4>
+    <h4 @click="test">components 활용</h4>
     <component :is="currentTab"></component>
     <h4>computed  활용</h4>
     <component :is="componentLoader"></component>
@@ -33,15 +33,20 @@ export default {
         'VueLoader',
         'AwesomeVue',
       ],
-      currentTab: 'VueRouter'
+      currentTab: 'VueRouter',
     }
   },
   computed: {
     componentLoader() {
-      const tab = this.currentTab
-      // console.log(this.currentTab)
-      return () => import(`@/components/${tab}`)
-      // return () => import(`@/components/${this.currentTab}`)
+      // const tab = this.currentTab
+      console.log(this.currentTab)
+      // return () => import(`@/components/${tab}`)
+      return () => import(`@/components/${this.currentTab}`)
+    },
+  },
+  methods: {
+    test() {
+      debugger
     }
   },
   components: {
