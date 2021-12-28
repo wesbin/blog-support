@@ -1,15 +1,11 @@
-package com.emptycastle.filterinterceptoraop.filter;
-
-import org.springframework.core.annotation.Order;
+package com.emptycastle.filterinterceptor.filter;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//@WebFilter(urlPatterns = "/TEST/*")
-public class SecondFilter implements Filter {
+public class CORSFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -20,9 +16,6 @@ public class SecondFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
-
-        res.setHeader("TEST", "ASDF");
-
         chain.doFilter(req, res);
     }
 

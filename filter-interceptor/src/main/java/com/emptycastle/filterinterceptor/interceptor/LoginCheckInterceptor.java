@@ -1,4 +1,4 @@
-package com.emptycastle.filterinterceptoraop.interceptor;
+package com.emptycastle.filterinterceptor.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,9 +10,6 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
-        // todo 로그인 인증 인터셉터 구현
-
         return HandlerInterceptor.super.preHandle(request, response, handler);
     }
 
