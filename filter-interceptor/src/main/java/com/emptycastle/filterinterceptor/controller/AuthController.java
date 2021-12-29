@@ -15,6 +15,6 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody Map<String, String> body) {
-        return new ResponseEntity<>("GOOD", HttpStatus.OK);
+        return new ResponseEntity<>("Login Controller", HttpStatus.OK);
     }
 }
