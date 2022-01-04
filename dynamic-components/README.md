@@ -2,9 +2,9 @@
 
 ## Link
 
-:closed_book: [[Vue]Reactivity System](https://empty-castle.tistory.com/4)
+:page_facing_up: [[Vue]Reactivity System](https://empty-castle.tistory.com/4)
 
-:closed_book: [[Vue]Dynamic components](https://empty-castle.tistory.com/3)
+:page_facing_up: [[Vue]Dynamic components](https://empty-castle.tistory.com/3)
 
 ## Project setup
 ```
