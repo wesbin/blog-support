@@ -2,7 +2,7 @@ public class Client {
 
     public static void main(String[] args) {
 
-        DirtyWork dirtyWork = new Proxy();
-        dirtyWork.someAction();
+        Subject subject = new Proxy();
+        subject.someRequest();
     }
 }

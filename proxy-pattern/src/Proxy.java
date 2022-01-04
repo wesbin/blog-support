@@ -1,14 +1,14 @@
-public class Proxy implements DirtyWork{
+public class Proxy implements Subject {
 
-    private Mastermind mastermind;
+    private RealSubject mastermind;
 
     @Override
-    public void someAction() {
+    public void someRequest() {
         if (mastermind == null) {
-            mastermind = new Mastermind();
+            mastermind = new RealSubject();
         }
-        System.out.println("pre handle");
-        mastermind.someAction();
-        System.out.println("post handle");
+        System.out.println("sub Job!!");
+        mastermind.someRequest();
+        System.out.println("another sub Job!!");
     }
 }

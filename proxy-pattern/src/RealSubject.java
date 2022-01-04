@@ -1,6 +1,6 @@
-public class Mastermind implements DirtyWork{
+public class RealSubject implements Subject {
 
-    private void heavyJob() {
+    private void mainJob() {
         System.out.println("heavy job start!!");
         try {
             Thread.sleep(3000);
@@ -11,7 +11,7 @@ public class Mastermind implements DirtyWork{
     }
 
     @Override
-    public void someAction() {
-        heavyJob();
+    public void someRequest() {
+        mainJob();
     }
 }
