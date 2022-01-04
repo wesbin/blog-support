@@ -1,6 +1,6 @@
 # dynamic-components
 
-## Link
+## Blog post link
 
 :page_facing_up: [[Vue]Reactivity System](https://empty-castle.tistory.com/4)
 
