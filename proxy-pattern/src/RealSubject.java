@@ -1,13 +1,16 @@
 public class RealSubject implements Subject {
 
     private void mainJob() {
-        System.out.println("heavy job start!!");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        System.out.println("main job start!!");
+        for (int i = 0; i < 3; i++) {
+            try {
+                System.out.println("ing...");
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        System.out.println("heavy job done!!");
+        System.out.println("main job done!!");
     }
 
     @Override
