@@ -1,5 +1,11 @@
 # dynamic-components
 
+## Link
+
+:closed_book: [[Vue]Reactivity System](https://empty-castle.tistory.com/4)
+
+:closed_book: [[Vue]Dynamic components](https://empty-castle.tistory.com/3)
+
 ## Project setup
 ```
 yarn install
