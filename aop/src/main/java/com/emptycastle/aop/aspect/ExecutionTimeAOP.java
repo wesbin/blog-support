@@ -5,16 +5,18 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
 
 @Aspect
+@Order(2)
 @Component
 public class ExecutionTimeAOP {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-//    @Around("execution(* *..controller.*.*(..))")
+    @Around("execution(* *..controller.*.*(..))")
     public Object calculateExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
