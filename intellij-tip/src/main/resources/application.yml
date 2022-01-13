@@ -3,7 +3,6 @@ spring:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@emptycastle_tp?TNS_ADMIN=./src/main/resources/Wallet_emptycastle
     username: ADMIN
-    password: Emptycastle1326
 mybatis:
   mapper-locations: /mapper/*.xml
   type-aliases-package: com.emptycastle.intellijtip.model
