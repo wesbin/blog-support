@@ -168,6 +168,36 @@ const data2 = [
     test: 'test2'
   }
 ]
+
+
+const multipleSorting = (data, columns) => {
+
+  const comparer = (a, b) => {
+    return compareMultiple(a, b, Object.entries(columns))
+  }
+
+  const compareMultiple = (a, b, columnEntries) => {
+    let index = -1
+    const length = columnEntries.length
+    while (++index < length) {
+      const [criteria, order] = columnEntries[index]
+      let result = compareAscending(a[criteria], b[criteria])
+      if (result) {
+        return result * (order === 'desc' ? -1 : 1)
+      }
+    }
+  }
+
+  const compareAscending = (prev, next) => {
+    if (prev > next) return 1
+    if (prev < next) return -1
+    return 0
+  }
+
+  data.sort(comparer)
+}
+
+
 </script>
 
 <template>
