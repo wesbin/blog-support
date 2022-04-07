@@ -1,4 +1,4 @@
-# filter-interceptor
+# js-utility
 
 ## Blog post link
 
