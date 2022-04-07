@@ -7,12 +7,12 @@ const multiSorting = (data, columns) => {
     return compareMultiple(a, b, Object.entries(columns))
   }
 
-  const compareMultiple = (a, b, columnEntries) => {
+  const compareMultiple = (a, b, columnsEntries) => {
     let index = -1
-    const length = columnEntries.length
+    const length = columnsEntries.length
     while (++index < length) {
-      const [criteria, order] = columnEntries[index]
-      let result = compareAscending(a[criteria], b[criteria])
+      const [column, order] = columnsEntries[index]
+      let result = compareAscending(a[column], b[column])
       if (result) {
         return result * (order === 'desc' ? -1 : 1)
       }
@@ -33,7 +33,7 @@ const before = Data().post
 // 정렬 후 데이터
 const after = Data().post
 
-multiSorting(after, {postId: 'desc', name: 'asc'})
+multiSorting(after, { postId: 'desc', name: 'asc' })
 </script>
 
 <template>
