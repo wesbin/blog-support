@@ -25,25 +25,15 @@ const multiSorting = (data, columns) => {
     return 0
   }
 
-  // data.sort(comparer)
-
-  let mappedData = data.map((value, index) => {
-    const obj = { index: index }
-    Object.keys(columns).forEach(criteria => {
-      obj[criteria] = value[criteria]
-    })
-    return obj
-  })
-
-  return mappedData.sort(comparer).map(value => {
-    return data[value.index]
-  })
+  data.sort(comparer)
 }
 
 // 정렬 전 데이터
 const before = Data().post
 // 정렬 후 데이터
-const after = multiSorting(before, { postId: 'desc', name: 'asc' })
+const after = Data().post
+
+multiSorting(after, { postId: 'desc', name: 'asc' })
 </script>
 
 <template>

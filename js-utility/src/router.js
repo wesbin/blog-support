@@ -1,10 +1,12 @@
-import {createWebHistory, createRouter} from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
+
+import App from '@/App.vue'
 
 const routes = [
   {
     path: "/",
     name: "Post List",
-    component: app,
+    component: App,
   },
 ];
 
