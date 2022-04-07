@@ -1,12 +1,15 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-import App from '@/App.vue'
-
 const routes = [
   {
-    path: "/",
-    name: "Post List",
-    component: App,
+    path: "/Nav",
+    name: "Nav",
+    component: () => import('@/Nav'),
+  },
+  {
+    path: "/MultiSorting",
+    name: "MultiSorting",
+    component: () => import('@/utility/MultiSorting')
   },
 ];
 
