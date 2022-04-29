@@ -1,4 +1,4 @@
-# proxy-pattern
+# composable
 
 ## Blog post link
 
