@@ -1,24 +1,5 @@
 # router-params
 
-## Project setup
-```
-yarn install
-```
+## Blog post link
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+:page_facing_up: [[Vue]Pass Object as Router Params, 라우트 파라미터로 오브젝트 넘기기](https://empty-castle.tistory.com/8)
