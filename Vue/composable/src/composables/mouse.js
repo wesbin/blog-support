@@ -1,4 +1,3 @@
-import {ref} from 'vue';
 import {useEventListener} from '@/composables/event';
 
 export function useMouse() {

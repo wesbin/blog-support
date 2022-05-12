@@ -9,7 +9,7 @@ const baseUrl = 'https://jsonplaceholder.typicode.com/todos/'
 const id = ref('1')
 const url = computed(() => baseUrl + id.value)
 
-const {data, error, retry} = useFetch(url)
+const {data, error} = useFetch(url)
 </script>
 
 <template>
