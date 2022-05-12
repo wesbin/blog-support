@@ -2,4 +2,4 @@
 
 ## Blog post link
 
-:page_facing_up: [[Javascript]Array Multi Column Sorting, 여러 조건으로 배열 정렬](https://empty-castle.tistory.com/7)
+:page_facing_up: [[Vue]Code reuse is Composables, 믹스인 대신 컴포저블](https://empty-castle.tistory.com/9)
