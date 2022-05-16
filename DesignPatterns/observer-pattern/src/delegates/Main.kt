@@ -1,10 +1,10 @@
 package delegates
 
 fun main() {
-    val broadcastStation = BroadcastStation()
-    broadcastStation.viewers.add { notice ->
+    val blog = Blog()
+    blog.followers.add { notice ->
         println("NOTICE: [$notice]")
     }
 
-    broadcastStation.notice = "delegates"
+    blog.notice = "delegates"
 }

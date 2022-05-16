@@ -2,9 +2,9 @@ package standard
 
 fun main() {
 
-    val broadcastStation = BroadcastStation()
-    broadcastStation.add(Viewer("Kotlin", broadcastStation))
-    broadcastStation.add(Viewer("Observer", broadcastStation))
+    val blog = Blog()
+    blog.add(Follower("Kotlin", blog))
+    blog.add(Follower("Observer", blog))
 
-    broadcastStation.notice = "PATTERN"
+    blog.notice = "PATTERN"
 }

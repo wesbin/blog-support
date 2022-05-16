@@ -3,7 +3,7 @@ package standard
 import Observable
 import Observer
 
-class BroadcastStation: Observable {
+class Blog: Observable {
 
     override val observers: ArrayList<Observer> = ArrayList()
     var notice = ""
