@@ -1,0 +1,4 @@
+interface Observer {
+
+    fun update()
+}
