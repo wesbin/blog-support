@@ -1,4 +1,4 @@
-# js-utility
+# JS
 
 ## Blog post link
 
