@@ -1,0 +1,5 @@
+package method
+
+class WeaponFactory {
+
+}
