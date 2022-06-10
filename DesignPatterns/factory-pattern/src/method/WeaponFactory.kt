@@ -1,5 +1,0 @@
-package method
-
-class WeaponFactory {
-
-}
