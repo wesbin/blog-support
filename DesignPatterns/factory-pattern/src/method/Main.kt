@@ -2,6 +2,6 @@ package method
 
 fun main() {
 
-    val axe: Weapon = WeaponForge().casting("Axe")
+    val axe: Weapon = WeaponFactory().build("Axe")
     println(axe.use())
 }

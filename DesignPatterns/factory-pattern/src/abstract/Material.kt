@@ -1,0 +1,4 @@
+package abstract
+
+interface Material {
+}

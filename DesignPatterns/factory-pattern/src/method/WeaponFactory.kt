@@ -1,8 +1,8 @@
 package method
 
-class WeaponForge: Forge {
+class WeaponFactory: Factory {
 
-    override fun casting(type: String): Weapon {
+    override fun build(type: String): Weapon {
         return when (type) {
             "Axe" -> Axe()
             "Spear" -> Spear()
