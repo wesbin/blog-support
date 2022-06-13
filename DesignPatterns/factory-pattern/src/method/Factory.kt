@@ -2,5 +2,5 @@ package method
 
 interface Factory {
 
-    fun build(type: String): Weapon
+    fun build(type: String): Weapon?
 }
