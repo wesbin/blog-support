@@ -1,0 +1,4 @@
+package abstract
+
+class GamingComputer {
+}
