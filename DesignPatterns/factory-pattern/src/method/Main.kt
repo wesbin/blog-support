@@ -2,6 +2,7 @@ package method
 
 fun main() {
 
-    val axe: Weapon? = WeaponFactory().build("Axe")
-    println(axe?.use())
+    val typeComputerFactory: TypeComputerFactory = TypeComputerFactory()
+    val computer: Computer? = typeComputerFactory.makeComputer("laptop")
+    println(computer?.use())
 }

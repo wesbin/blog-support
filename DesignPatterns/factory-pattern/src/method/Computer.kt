@@ -1,6 +1,6 @@
 package method
 
-interface Weapon {
+interface Computer {
 
     fun use(): String
 }
