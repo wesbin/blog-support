@@ -2,5 +2,5 @@ package abstract
 
 interface Computer {
 
-    fun checkSpec(): String
+    fun use(): String
 }

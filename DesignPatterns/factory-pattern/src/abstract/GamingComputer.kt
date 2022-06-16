@@ -1,4 +1,8 @@
 package abstract
 
-class GamingComputer {
+class GamingComputer: Computer {
+
+    override fun use(): String {
+        return "use GamingComputer"
+    }
 }
