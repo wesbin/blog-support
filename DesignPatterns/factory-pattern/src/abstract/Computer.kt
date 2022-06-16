@@ -1,6 +1,8 @@
 package abstract
 
-interface Computer {
+abstract class Computer(private val computerFactory: ComputerFactory) {
 
-    fun use(): String
+    fun use(): String {
+        return "CPU: ${computerFactory.CPU()}, GPU: ${computerFactory.GPU()}, Storage: ${computerFactory.Storage()}"
+    }
 }

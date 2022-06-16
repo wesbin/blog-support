@@ -1,6 +1,7 @@
 package abstract
 
 fun main() {
-    val officeComputerFactory: ComputerFactory = OfficeComputer.Factory
-    println(officeComputerFactory.CPU().info())
+
+    val myComputer = MyComputer(OfficeComputerFactory())
+    println(myComputer.use())
 }

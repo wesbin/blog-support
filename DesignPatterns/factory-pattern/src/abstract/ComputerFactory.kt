@@ -4,9 +4,9 @@ import abstract.cpu.CPU
 import abstract.gpu.GPU
 import abstract.storage.Storage
 
-abstract class ComputerFactory {
+interface ComputerFactory {
 
-    abstract fun CPU(): CPU
-    abstract fun GPU(): GPU
-    abstract fun Storage(): Storage
+    fun CPU(): CPU
+    fun GPU(): GPU
+    fun Storage(): Storage
 }
