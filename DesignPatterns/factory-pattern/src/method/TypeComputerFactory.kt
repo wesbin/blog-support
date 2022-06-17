@@ -2,7 +2,7 @@ package method
 
 class TypeComputerFactory: ComputerFactory {
 
-    override fun makeComputer(type: String): Computer? {
+    override fun createComputer(type: String): Computer? {
         return when (type) {
             "laptop" -> LaptopComputer()
             "desktop" -> DesktopComputer()

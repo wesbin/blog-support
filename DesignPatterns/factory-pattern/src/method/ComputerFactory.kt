@@ -2,5 +2,5 @@ package method
 
 interface ComputerFactory {
 
-    fun makeComputer(type: String): Computer?
+    fun createComputer(type: String): Computer?
 }

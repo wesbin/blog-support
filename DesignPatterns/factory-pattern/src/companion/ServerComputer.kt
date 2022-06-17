@@ -3,7 +3,7 @@ package companion
 class ServerComputer: Computer {
 
     companion object Factory: ComputerFactory() {
-        override fun buildComputer(): Computer = ServerComputer()
+        override fun createComputer(): Computer = ServerComputer()
     }
 
     override fun check(): String {

@@ -2,5 +2,5 @@ package companion
 
 abstract class ComputerFactory {
 
-    abstract fun buildComputer(): Computer
+    abstract fun createComputer(): Computer
 }
