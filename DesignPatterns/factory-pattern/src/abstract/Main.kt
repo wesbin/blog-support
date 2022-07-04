@@ -2,6 +2,6 @@ package abstract
 
 fun main() {
 
-    val myComputer = MyComputer(OfficeComputerFactory())
+    val myComputer = Computer(OfficeComputerFactory())
     println(myComputer.use())
 }
