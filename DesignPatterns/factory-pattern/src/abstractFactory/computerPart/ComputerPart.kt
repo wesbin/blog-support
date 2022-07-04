@@ -1,6 +1,6 @@
-package abstract.cpu
+package abstractFactory.computerPart
 
-abstract class CPU {
+open class ComputerPart {
 
     fun info(): String {
         return this::class.simpleName.toString()
